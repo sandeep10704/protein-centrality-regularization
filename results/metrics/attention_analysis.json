@@ -1,0 +1,16 @@
+{
+  "vanilla_gatv2": {
+    "mean_attention": 0.20333333324995778,
+    "std_attention": 0.0518111592441597,
+    "spearman_attention_vs_distance": -0.09121245682965032,
+    "spearman_attention_vs_degree": -0.7355772635582021,
+    "attention_entropy": 8.31245347490992
+  },
+  "bio_aga_resgatv2": {
+    "mean_attention": 0.20333333363401748,
+    "std_attention": 0.06307159322690038,
+    "spearman_attention_vs_distance": -0.03322855705666932,
+    "spearman_attention_vs_degree": -0.6150356576681475,
+    "attention_entropy": 8.29784568768273
+  }
+}

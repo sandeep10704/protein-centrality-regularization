@@ -1,0 +1,137 @@
+{
+  "project": "protein-centrality-regularization",
+  "start_time": "2026-11-10T14:50:00+05:30",
+  "completion_time": "2026-11-10T17:35:00+05:30",
+  "status": "ALL_EXPERIMENTS_COMPLETED",
+  "completed_experiments": [
+    "exp_a_baselines",
+    "exp_b_centralities",
+    "exp_c_contact_topology",
+    "exp_d_hyperparameters",
+    "exp_e_ablations",
+    "exp_f_robustness",
+    "biological_mechanics",
+    "attention_analysis"
+  ],
+  "experiments": {
+    "exp_a_baselines": {
+      "status": "COMPLETED",
+      "metrics": {
+        "gcn": {
+          "accuracy": 58.5,
+          "macro_f1": 58.32339465224529
+        },
+        "gat": {
+          "accuracy": 51.83333333333333,
+          "macro_f1": 51.24180396336673
+        },
+        "gatv2": {
+          "accuracy": 26.0,
+          "macro_f1": 20.2381851773375
+        },
+        "uniform_dropedge": {
+          "accuracy": 50.33333333333333,
+          "macro_f1": 49.85410253062101
+        },
+        "aga_degree": {
+          "accuracy": 54.0,
+          "macro_f1": 52.96394502687606
+        },
+        "bio_aga": {
+          "accuracy": 49.99999999999999,
+          "macro_f1": 48.899894030566685
+        },
+        "bio_aga_resgatv2": {
+          "accuracy": 58.0,
+          "macro_f1": 57.51561560891825
+        }
+      }
+    },
+    "exp_b_centralities": {
+      "status": "COMPLETED",
+      "summary": {
+        "degree": {
+          "accuracy": 47.83,
+          "macro_f1": 46.93,
+          "overhead_ms": 0.113
+        },
+        "betweenness": {
+          "accuracy": 47.33,
+          "macro_f1": 46.21,
+          "overhead_ms": 0.835
+        },
+        "closeness": {
+          "accuracy": 49.67,
+          "macro_f1": 48.96,
+          "overhead_ms": 0.281
+        },
+        "eigenvector": {
+          "accuracy": 51.67,
+          "macro_f1": 51.53,
+          "overhead_ms": 0.991
+        },
+        "random": {
+          "accuracy": 51.0,
+          "macro_f1": 49.31,
+          "overhead_ms": 0.01
+        }
+      }
+    },
+    "exp_c_contact_topology": {
+      "status": "COMPLETED",
+      "cutoffs": [
+        6.0,
+        8.0,
+        10.0,
+        12.0
+      ],
+      "knn": [
+        6,
+        10,
+        16
+      ]
+    },
+    "exp_d_hyperparameters": {
+      "status": "COMPLETED",
+      "p_base_sweep": [
+        0.0,
+        0.1,
+        0.2,
+        0.35,
+        0.5
+      ],
+      "gamma_sweep": [
+        0.15,
+        0.35,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    "exp_e_ablations": {
+      "status": "COMPLETED",
+      "summary": {
+        "vanilla_gatv2": 54.33,
+        "uniform_dropedge": 49.33,
+        "degree_only": 54.0,
+        "betweenness_only": 53.67,
+        "no_sequence_protection": 50.5,
+        "no_spatial_decay": 50.67,
+        "no_covalent_protection": 51.5,
+        "original_aga": 54.0,
+        "complete_bio_aga": 50.67,
+        "bio_aga_resgatv2": 56.17
+      }
+    },
+    "exp_f_robustness": {
+      "status": "COMPLETED",
+      "noise_levels": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ]
+    }
+  }
+}

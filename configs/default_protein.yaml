@@ -1,0 +1,53 @@
+# Configuration for Centrality-Aware Edge Regularization on Protein Structural Graphs
+project_name: "protein-centrality-regularization"
+
+dataset:
+  track_a:
+    name: "ENZYMES"
+    root: "data/raw"
+    processed_dir: "data/processed"
+    num_classes: 6
+    use_node_attr: true
+  track_b:
+    name: "PDB_Residues"
+    contact_cutoff: 8.0 # Angstroms
+    rbf_dim: 16
+    include_backbone: true
+
+models:
+  hidden_dim: 64
+  heads: 4
+  dropout: 0.2
+  pooling: "mean_max" # options: "mean", "max", "mean_max", "attention"
+
+training:
+  epochs: 150
+  batch_size: 32
+  lr: 0.001
+  weight_decay: 1e-4
+  patience: 30
+  seeds: [42, 1337, 2024, 7, 99]
+  k_folds: 5
+
+regularization:
+  uniform_dropedge:
+    drop_prob: 0.20
+  original_aga:
+    drop_prob: 0.20
+    gamma: 0.35
+  bio_aga:
+    drop_prob: 0.20
+    gamma: 0.35
+    alpha_seq: 0.25
+    tau_seq: 12.0
+    sigma_dist: 4.0
+    covalent_protection: true
+    centrality_metric: "degree" # options: "degree", "betweenness", "closeness", "eigenvector"
+
+experiments:
+  exp_a_baselines: true
+  exp_b_centralities: true
+  exp_c_contact_topology: true
+  exp_d_hyperparameters: true
+  exp_e_ablations: true
+  exp_f_robustness: true

@@ -1,0 +1,55 @@
+{
+  "radius_sweep": {
+    "6.0": {
+      "contact_cutoff_angstrom": 6.0,
+      "mean_degree": 5.08592865804581,
+      "std_degree": 0.42303379394998103,
+      "mean_long_range_ratio": 0.16968675602850136,
+      "std_long_range_ratio": 0.0917763337304123
+    },
+    "8.0": {
+      "contact_cutoff_angstrom": 8.0,
+      "mean_degree": 9.175744357906126,
+      "std_degree": 1.1632796448897473,
+      "mean_long_range_ratio": 0.2836571781033091,
+      "std_long_range_ratio": 0.10822724540331415
+    },
+    "10.0": {
+      "contact_cutoff_angstrom": 10.0,
+      "mean_degree": 16.012310259158376,
+      "std_degree": 2.9752786606489807,
+      "mean_long_range_ratio": 0.3915639172967252,
+      "std_long_range_ratio": 0.1436053431673718
+    },
+    "12.0": {
+      "contact_cutoff_angstrom": 12.0,
+      "mean_degree": 25.526114944004945,
+      "std_degree": 6.174061237556498,
+      "mean_long_range_ratio": 0.4870116279176982,
+      "std_long_range_ratio": 0.17148186085223163
+    }
+  },
+  "knn_sweep": {
+    "6": {
+      "k_neighbors": 6,
+      "mean_degree": 6.997174658983313,
+      "std_degree": 0.09643503224076423,
+      "mean_long_range_ratio": 0.221379361737159,
+      "std_long_range_ratio": 0.07987580378812315
+    },
+    "10": {
+      "k_neighbors": 10,
+      "mean_degree": 11.587837559376275,
+      "std_degree": 0.12199090455644922,
+      "mean_long_range_ratio": 0.31420796033131443,
+      "std_long_range_ratio": 0.09081254380547385
+    },
+    "16": {
+      "k_neighbors": 16,
+      "mean_degree": 18.45273868235354,
+      "std_degree": 0.34830705443977117,
+      "mean_long_range_ratio": 0.4098408464182484,
+      "std_long_range_ratio": 0.11587776595271682
+    }
+  }
+}

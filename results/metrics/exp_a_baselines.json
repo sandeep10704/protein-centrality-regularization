@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "title": "Experiment A: Baseline Model Suite on ENZYMES",
+    "epochs": 100,
+    "patience": 25,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "hidden_dim": 64,
+    "heads": 4,
+    "num_layers": 3,
+    "dropout": 0.2,
+    "seeds": [
+      42,
+      1337,
+      2024,
+      7,
+      99
+    ],
+    "timestamp": "2026-11-10T16:52:47Z"
+  },
+  "models": {
+    "gcn": {
+      "name": "GCN Baseline",
+      "accuracy_mean": 58.5,
+      "accuracy_std": 3.9930495169036484,
+      "macro_f1_mean": 58.32339465224529,
+      "macro_f1_std": 3.437758075090845,
+      "weighted_f1_mean": 58.32339465224529,
+      "weighted_f1_std": 3.437758075090844,
+      "runs_accuracy": [
+        50.83333333333333,
+        60.0,
+        62.5,
+        60.0,
+        59.166666666666664
+      ],
+      "runs_macro_f1": [
+        51.77924429032282,
+        60.34992704922914,
+        61.70202638378891,
+        59.1101067845254,
+        58.67566875336021
+      ],
+      "num_parameters": 18758,
+      "training_time_mean_seconds": 5.093184232711792,
+      "inference_latency_ms": 0.0
+    },
+    "gat": {
+      "name": "Standard GAT",
+      "accuracy_mean": 51.83333333333333,
+      "accuracy_std": 6.377042156569664,
+      "macro_f1_mean": 51.24180396336673,
+      "macro_f1_std": 7.095925151389073,
+      "weighted_f1_mean": 51.24180396336673,
+      "weighted_f1_std": 7.095925151389076,
+      "runs_accuracy": [
+        50.83333333333333,
+        62.5,
+        42.5,
+        52.5,
+        50.83333333333333
+      ],
+      "runs_macro_f1": [
+        51.36810123961691,
+        62.53206313873655,
+        40.44586495566888,
+        52.871853901265666,
+        48.99113658154565
+      ],
+      "num_parameters": 19142,
+      "training_time_mean_seconds": 7.937111282348633,
+      "inference_latency_ms": 0.0
+    },
+    "gatv2": {
+      "name": "Dynamic GATv2",
+      "accuracy_mean": 54.0,
+      "accuracy_std": 5.204698731808678,
+      "macro_f1_mean": 53.32174360341738,
+      "macro_f1_std": 5.122606554559134,
+      "weighted_f1_mean": 53.32174360341738,
+      "weighted_f1_std": 5.122606554559134,
+      "runs_accuracy": [
+        49.166666666666664,
+        62.5,
+        57.49999999999999,
+        46.666666666666664,
+        54.166666666666664
+      ],
+      "runs_macro_f1": [
+        48.34873644148416,
+        60.66153386924815,
+        58.17451469625383,
+        46.17669541666403,
+        53.247237593435734
+      ],
+      "num_parameters": 28870,
+      "training_time_mean_seconds": 10.024185276031494,
+      "inference_latency_ms": 0.0
+    },
+    "uniform_dropedge": {
+      "name": "GATv2 + Uniform DropEdge",
+      "accuracy_mean": 50.33333333333333,
+      "accuracy_std": 3.3993463423951913,
+      "macro_f1_mean": 49.85410253062101,
+      "macro_f1_std": 2.891116980415176,
+      "weighted_f1_mean": 49.85410253062101,
+      "weighted_f1_std": 2.8911169804151746,
+      "runs_accuracy": [
+        49.166666666666664,
+        52.5,
+        47.5,
+        46.666666666666664,
+        55.833333333333336
+      ],
+      "runs_macro_f1": [
+        49.17878174457122,
+        52.78012682730836,
+        47.75519376186784,
+        46.012692460060876,
+        53.54371785929681
+      ],
+      "num_parameters": 28870,
+      "training_time_mean_seconds": 10.231657552719117,
+      "inference_latency_ms": 0.0
+    },
+    "aga_degree": {
+      "name": "GATv2 + Original AGA-Degree",
+      "accuracy_mean": 54.0,
+      "accuracy_std": 4.1633319989322635,
+      "macro_f1_mean": 52.96394502687606,
+      "macro_f1_std": 4.875083296859677,
+      "weighted_f1_mean": 52.96394502687606,
+      "weighted_f1_std": 4.875083296859678,
+      "runs_accuracy": [
+        47.5,
+        59.166666666666664,
+        57.49999999999999,
+        54.166666666666664,
+        51.66666666666667
+      ],
+      "runs_macro_f1": [
+        45.51422968867473,
+        58.59655267331503,
+        57.591553215788224,
+        53.32553435298241,
+        49.79185520361991
+      ],
+      "num_parameters": 28870,
+      "training_time_mean_seconds": 9.685735130310059,
+      "inference_latency_ms": 0.0
+    },
+    "bio_aga": {
+      "name": "GATv2 + Proposed Bio-AGA",
+      "accuracy_mean": 49.99999999999999,
+      "accuracy_std": 7.835106182362105,
+      "macro_f1_mean": 48.899894030566685,
+      "macro_f1_std": 8.584898848054246,
+      "weighted_f1_mean": 48.899894030566685,
+      "weighted_f1_std": 8.584898848054246,
+      "runs_accuracy": [
+        43.333333333333336,
+        56.666666666666664,
+        60.83333333333333,
+        40.0,
+        49.166666666666664
+      ],
+      "runs_macro_f1": [
+        41.44334347581828,
+        55.02464873546341,
+        61.69934344765253,
+        38.380138380138376,
+        47.95199611376082
+      ],
+      "num_parameters": 28870,
+      "training_time_mean_seconds": 8.91603479385376,
+      "inference_latency_ms": 0.0
+    },
+    "bio_aga_resgatv2": {
+      "name": "Proposed Bio-AGA + ResGATv2",
+      "accuracy_mean": 58.0,
+      "accuracy_std": 3.7118429085533484,
+      "macro_f1_mean": 57.51561560891825,
+      "macro_f1_std": 3.856049558432063,
+      "weighted_f1_mean": 57.51561560891825,
+      "weighted_f1_std": 3.8560495584320624,
+      "runs_accuracy": [
+        55.833333333333336,
+        65.0,
+        57.49999999999999,
+        57.49999999999999,
+        54.166666666666664
+      ],
+      "runs_macro_f1": [
+        55.85296947864096,
+        64.83013353911187,
+        57.46115476378634,
+        55.814761578158944,
+        53.61905868489316
+      ],
+      "num_parameters": 38598,
+      "training_time_mean_seconds": 11.211391353607178,
+      "inference_latency_ms": 0.0
+    }
+  }
+}

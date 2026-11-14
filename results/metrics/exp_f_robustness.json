@@ -1,0 +1,298 @@
+{
+  "metadata": {
+    "title": "Experiment F: Robustness Stress-Testing Under Structural Noise",
+    "noise_levels": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ],
+    "seeds": [
+      42,
+      1337,
+      2024
+    ],
+    "timestamp": "2026-11-10T17:32:11Z"
+  },
+  "edge_addition_noise": {
+    "vanilla": {
+      "name": "Vanilla GATv2 (No Defense)",
+      "trajectory": {
+        "0.0": {
+          "noise_ratio": 0.0,
+          "mean_accuracy": 56.11111111111111,
+          "std_accuracy": 5.457467417885696
+        },
+        "0.1": {
+          "noise_ratio": 0.1,
+          "mean_accuracy": 56.666666666666664,
+          "std_accuracy": 5.569427126600952
+        },
+        "0.2": {
+          "noise_ratio": 0.2,
+          "mean_accuracy": 56.111111111111114,
+          "std_accuracy": 3.4246744460938734
+        },
+        "0.3": {
+          "noise_ratio": 0.3,
+          "mean_accuracy": 56.111111111111114,
+          "std_accuracy": 5.10688230856951
+        },
+        "0.4": {
+          "noise_ratio": 0.4,
+          "mean_accuracy": 56.11111111111111,
+          "std_accuracy": 4.530418452861134
+        }
+      }
+    },
+    "uniform": {
+      "name": "Uniform DropEdge Baseline",
+      "trajectory": {
+        "0.0": {
+          "noise_ratio": 0.0,
+          "mean_accuracy": 50.55555555555555,
+          "std_accuracy": 4.922234762963706
+        },
+        "0.1": {
+          "noise_ratio": 0.1,
+          "mean_accuracy": 50.55555555555555,
+          "std_accuracy": 5.54164926201667
+        },
+        "0.2": {
+          "noise_ratio": 0.2,
+          "mean_accuracy": 50.0,
+          "std_accuracy": 4.138795673819819
+        },
+        "0.3": {
+          "noise_ratio": 0.3,
+          "mean_accuracy": 50.27777777777778,
+          "std_accuracy": 4.631481111259186
+        },
+        "0.4": {
+          "noise_ratio": 0.4,
+          "mean_accuracy": 50.0,
+          "std_accuracy": 5.400617248673213
+        }
+      }
+    },
+    "aga_degree": {
+      "name": "Original AGA-Degree",
+      "trajectory": {
+        "0.0": {
+          "noise_ratio": 0.0,
+          "mean_accuracy": 54.72222222222222,
+          "std_accuracy": 5.152010275275389
+        },
+        "0.1": {
+          "noise_ratio": 0.1,
+          "mean_accuracy": 55.27777777777777,
+          "std_accuracy": 5.499719409228701
+        },
+        "0.2": {
+          "noise_ratio": 0.2,
+          "mean_accuracy": 53.61111111111111,
+          "std_accuracy": 4.922234762963707
+        },
+        "0.3": {
+          "noise_ratio": 0.3,
+          "mean_accuracy": 54.444444444444436,
+          "std_accuracy": 5.015408357018829
+        },
+        "0.4": {
+          "noise_ratio": 0.4,
+          "mean_accuracy": 55.0,
+          "std_accuracy": 5.137011669140811
+        }
+      }
+    },
+    "bio_aga": {
+      "name": "Proposed Bio-AGA",
+      "trajectory": {
+        "0.0": {
+          "noise_ratio": 0.0,
+          "mean_accuracy": 50.0,
+          "std_accuracy": 8.277591347639634
+        },
+        "0.1": {
+          "noise_ratio": 0.1,
+          "mean_accuracy": 49.72222222222222,
+          "std_accuracy": 7.49485420179558
+        },
+        "0.2": {
+          "noise_ratio": 0.2,
+          "mean_accuracy": 50.55555555555555,
+          "std_accuracy": 8.060343404748284
+        },
+        "0.3": {
+          "noise_ratio": 0.3,
+          "mean_accuracy": 49.166666666666664,
+          "std_accuracy": 7.728015412913087
+        },
+        "0.4": {
+          "noise_ratio": 0.4,
+          "mean_accuracy": 50.833333333333336,
+          "std_accuracy": 8.361064968495787
+        }
+      }
+    },
+    "bio_aga_res": {
+      "name": "Bio-AGA + ResGATv2",
+      "trajectory": {
+        "0.0": {
+          "noise_ratio": 0.0,
+          "mean_accuracy": 52.5,
+          "std_accuracy": 5.81345820457121
+        },
+        "0.1": {
+          "noise_ratio": 0.1,
+          "mean_accuracy": 51.944444444444436,
+          "std_accuracy": 5.786851848888793
+        },
+        "0.2": {
+          "noise_ratio": 0.2,
+          "mean_accuracy": 52.77777777777777,
+          "std_accuracy": 5.499719409228703
+        },
+        "0.3": {
+          "noise_ratio": 0.3,
+          "mean_accuracy": 52.77777777777777,
+          "std_accuracy": 4.827263110272989
+        },
+        "0.4": {
+          "noise_ratio": 0.4,
+          "mean_accuracy": 51.94444444444445,
+          "std_accuracy": 7.275444918727111
+        }
+      }
+    }
+  },
+  "edge_deletion_noise": {
+    "vanilla": {
+      "name": "Vanilla GATv2 (No Defense)",
+      "trajectory": {
+        "0.0": {
+          "drop_ratio": 0.0,
+          "mean_accuracy": 56.11111111111111,
+          "std_accuracy": 5.457467417885696
+        },
+        "0.1": {
+          "drop_ratio": 0.1,
+          "mean_accuracy": 55.55555555555555,
+          "std_accuracy": 2.749859704614346
+        },
+        "0.2": {
+          "drop_ratio": 0.2,
+          "mean_accuracy": 53.05555555555555,
+          "std_accuracy": 3.0681558381075726
+        },
+        "0.3": {
+          "drop_ratio": 0.3,
+          "mean_accuracy": 49.44444444444445,
+          "std_accuracy": 4.321208107251123
+        }
+      }
+    },
+    "uniform": {
+      "name": "Uniform DropEdge Baseline",
+      "trajectory": {
+        "0.0": {
+          "drop_ratio": 0.0,
+          "mean_accuracy": 50.55555555555555,
+          "std_accuracy": 4.922234762963706
+        },
+        "0.1": {
+          "drop_ratio": 0.1,
+          "mean_accuracy": 50.555555555555564,
+          "std_accuracy": 3.74742710089779
+        },
+        "0.2": {
+          "drop_ratio": 0.2,
+          "mean_accuracy": 50.0,
+          "std_accuracy": 4.90653381462658
+        },
+        "0.3": {
+          "drop_ratio": 0.3,
+          "mean_accuracy": 46.38888888888889,
+          "std_accuracy": 5.944704044175748
+        }
+      }
+    },
+    "aga_degree": {
+      "name": "Original AGA-Degree",
+      "trajectory": {
+        "0.0": {
+          "drop_ratio": 0.0,
+          "mean_accuracy": 54.72222222222222,
+          "std_accuracy": 5.152010275275389
+        },
+        "0.1": {
+          "drop_ratio": 0.1,
+          "mean_accuracy": 53.333333333333336,
+          "std_accuracy": 3.600411499115477
+        },
+        "0.2": {
+          "drop_ratio": 0.2,
+          "mean_accuracy": 50.833333333333336,
+          "std_accuracy": 4.762896722078401
+        },
+        "0.3": {
+          "drop_ratio": 0.3,
+          "mean_accuracy": 47.5,
+          "std_accuracy": 5.569427126600951
+        }
+      }
+    },
+    "bio_aga": {
+      "name": "Proposed Bio-AGA",
+      "trajectory": {
+        "0.0": {
+          "drop_ratio": 0.0,
+          "mean_accuracy": 50.0,
+          "std_accuracy": 8.277591347639634
+        },
+        "0.1": {
+          "drop_ratio": 0.1,
+          "mean_accuracy": 49.166666666666664,
+          "std_accuracy": 6.4907341364155124
+        },
+        "0.2": {
+          "drop_ratio": 0.2,
+          "mean_accuracy": 46.388888888888886,
+          "std_accuracy": 6.431020501550125
+        },
+        "0.3": {
+          "drop_ratio": 0.3,
+          "mean_accuracy": 42.77777777777777,
+          "std_accuracy": 6.173919658581354
+        }
+      }
+    },
+    "bio_aga_res": {
+      "name": "Bio-AGA + ResGATv2",
+      "trajectory": {
+        "0.0": {
+          "drop_ratio": 0.0,
+          "mean_accuracy": 52.5,
+          "std_accuracy": 5.81345820457121
+        },
+        "0.1": {
+          "drop_ratio": 0.1,
+          "mean_accuracy": 51.666666666666664,
+          "std_accuracy": 2.4532669073132953
+        },
+        "0.2": {
+          "drop_ratio": 0.2,
+          "mean_accuracy": 50.0,
+          "std_accuracy": 4.90653381462658
+        },
+        "0.3": {
+          "drop_ratio": 0.3,
+          "mean_accuracy": 49.444444444444436,
+          "std_accuracy": 5.1967463705193655
+        }
+      }
+    }
+  },
+  "long_range_perturbation": {}
+}

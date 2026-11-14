@@ -1,0 +1,100 @@
+{
+  "dataset_mechanics": {
+    "covalent_retention": {
+      "uniform": {
+        "mean": 79.99999994039536,
+        "std": 3.98014450664438e-06
+      },
+      "aga_original": {
+        "mean": 97.54157012701035,
+        "std": 0.8491206160380088
+      },
+      "bio_aga": {
+        "mean": 100.0,
+        "std": 0.0
+      }
+    },
+    "short_range_retention": {
+      "uniform": {
+        "mean": 80.60000079870224,
+        "std": 3.4117442813863006
+      },
+      "aga_original": {
+        "mean": 97.86317986249924,
+        "std": 0.8320983318022561
+      },
+      "bio_aga": {
+        "mean": 86.49128425121307,
+        "std": 2.389478142706034
+      }
+    },
+    "medium_range_retention": {
+      "uniform": {
+        "mean": 81.80000072717667,
+        "std": 5.723634979815863
+      },
+      "aga_original": {
+        "mean": 97.85068249702454,
+        "std": 1.055264718380105
+      },
+      "bio_aga": {
+        "mean": 87.74551635980606,
+        "std": 3.86542628763801
+      }
+    },
+    "long_range_retention": {
+      "uniform": {
+        "mean": 82.200000166893,
+        "std": 6.257795080192682
+      },
+      "aga_original": {
+        "mean": 97.86271131038666,
+        "std": 0.9553435787306662
+      },
+      "bio_aga": {
+        "mean": 88.40078496932983,
+        "std": 4.0844731855917145
+      }
+    },
+    "hub_retention": {
+      "uniform": {
+        "mean": 80.00000047683716,
+        "std": 4.789187771463553e-06
+      },
+      "aga_original": {
+        "mean": 98.19672793149948,
+        "std": 0.6801609982142808
+      },
+      "bio_aga": {
+        "mean": 90.75976794958115,
+        "std": 1.4457700516364187
+      }
+    },
+    "peripheral_retention": {
+      "uniform": {
+        "mean": 80.40000069141388,
+        "std": 2.799999901228704
+      },
+      "aga_original": {
+        "mean": 96.37319427728653,
+        "std": 1.1690048470350247
+      },
+      "bio_aga": {
+        "mean": 92.3932614326477,
+        "std": 2.812685174330491
+      }
+    }
+  },
+  "catalytic_site_analysis": {
+    "protein": "1TIM (Triosephosphate isomerase)",
+    "catalytic_residues": [
+      "Lys12",
+      "His95",
+      "Glu165"
+    ],
+    "num_catalytic_edges": 76,
+    "active_edge_retention_uniform": 80.0000011920929,
+    "active_edge_retention_original_aga": 97.89349436759949,
+    "active_edge_retention_bio_aga": 88.02845478057861
+  }
+}
