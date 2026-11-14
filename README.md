@@ -480,18 +480,6 @@ Evaluated on authentic crystallographic enzyme structures from the RCSB PDB, inc
 
 ---
 
-## 📚 Course Evaluation & Examination Documents
-
-For academic review, viva voce preparation, and presentation defense, comprehensive documentation is provided in [`docs/`](docs/):
-
-| Document | Path | Purpose |
-|:---|:---|:---|
-| **Academic Project Report** | [`docs/college_project_report.md`](docs/college_project_report.md) | Full submission report with abstract, architecture, mathematics, empirical results, and references. |
-| **Deep Learning Concepts Guide** | [`docs/deep_learning_concepts_guide.md`](docs/deep_learning_concepts_guide.md) | In-depth answers & mathematical formulas for 16 core deep learning & GNN questions for viva prep. |
-| **Oral Presentation Script** | [`docs/presentation_script.md`](docs/presentation_script.md) | Slide-by-slide 12-slide oral presentation script with verbatim speaker notes. |
-| **Viva Voce Q&A Document** | [`docs/viva_questions_and_answers.md`](docs/viva_questions_and_answers.md) | 20 detailed technical questions & answers for oral examination defense. |
-
----
 
 ## Citation
 
